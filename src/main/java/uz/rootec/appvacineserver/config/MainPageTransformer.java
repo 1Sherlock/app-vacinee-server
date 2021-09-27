@@ -12,6 +12,7 @@ import uz.rootec.appvacineserver.repository.PatientRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -90,7 +91,7 @@ public class MainPageTransformer implements ResourceTransformer {
                         "\n" +
                         "        <p>Tug‘ilgan sana/Дата рождения/Date of birth: <b>"+ patient.getBirthDate() +"</b></p>\n" +
                         "        <p>Jinsi/Пол/Sex: <b>" + patient.getGender() + "</b></p>\n" +
-                        "        <p>Berilgan sana/Дата выдачи/Date of issue: <b>" + patient.getGivenDate() +"</b></p><div style=\"text-align:center;margin-top:30px\"><img width=\"231\" height=\"231\" src=\"https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=https://webtopdf.expeditedaddons.com/?api_key=53YH4OUM7G8Q9BJI4NVF6CW590X0SDZT7L1KEA8R3621P2&content=https://app-vacinee.herokuapp.com/sertificate/"+ url.split("/")[2] +"\" style=\"border: 1px solid #ddd;\"></div>\n" +
+                        "        <p>Berilgan sana/Дата выдачи/Date of issue: <b>" + patient.getGivenDate() +"</b></p><div style=\"text-align:center;margin-top:30px\"><img width=\"231\" height=\"231\" src=\"https://api.qrserver.com/v1/create-qr-code/?size=320x320&data="+ URLEncoder.encode("https://webtopdf.expeditedaddons.com/?api_key=53YH4OUM7G8Q9BJI4NVF6CW590X0SDZT7L1KEA8R3621P2&content=https://app-vacinee.herokuapp.com/sertificate/" + url.split("/")[2], "UTF-8")  +"\" style=\"border: 1px solid #ddd;\"></div>\n" +
                         "        <p style=\"text-align:center;line-height: 1.8;padding-top: 190px\">O‘zbekiston Respublikasi sanitariya-epidemiologik osoyishtalik va jamoat salomatligi xizmati<br>\n" +
                         "            Manzili: Toshkent shahar, Chilonzor tumani, Bunyodkor ko‘chasi, 45<br>\n" +
                         "            Telefon: +998 71 276 40 71<br>\n" +
