@@ -72,8 +72,7 @@ public class MainPageTransformer implements ResourceTransformer {
                         "            <div style=\"border:1px solid #ddd; width: 145px; display: inline-block; padding: 2px;margin-left: -5px;\"><b>"+ patient.getVacineSerials().get(0) +"</b></div>\n" +
                         "            <div style=\"margin-left: 15px; background:#ddd; padding:3px 10px; display: inline-block;\"><b>2</b></div>\n" +
                         "            <div style=\"border:1px solid #ddd; width: 145px; display: inline-block; padding: 2px;margin-left: -5px;\"><b>"+ patient.getVacineSerials().get(1) +"</b></div>\n" +
-                        "            <div style=\"margin-left: 15px; background:#ddd; padding:3px 10px; display: inline-block;\"><b>3</b></div>\n" +
-                        "            <div style=\"border:1px solid #ddd; width: 145px; display: inline-block; padding: 2px;margin-left: -5px;\"><b>"+ patient.getVacineSerials().get(2) +"</b></div>\n" +
+                     
                         "\n" +
                         "        </div>\n" +
                         "        <div style=\"display: flex; align-items: center; margin-bottom: 1rem;\">\n" +
@@ -83,11 +82,10 @@ public class MainPageTransformer implements ResourceTransformer {
                         "            <div style=\"margin-left: 15px; background:#ddd; padding:3px 10px; display: inline-block;\"><b>2</b></div>\n" +
                         "            <div style=\"border:1px solid #ddd; width: 145px; display: inline-block; padding: 2px;margin-left: -5px;\"><b>"+ patient.getVacineDates().get(1) +"</b></div>\n" +
                         "\n" +
-                        "            <div style=\"margin-left: 15px; background:#ddd; padding:3px 10px; display: inline-block;\"><b>3</b></div>\n" +
-                        "            <div style=\"border:1px solid #ddd; width: 145px; display: inline-block; padding: 2px;margin-left: -5px;\"><b>"+ patient.getVacineDates().get(2) +"</b></div>\n" +
+                     
                         "        </div>" +
                         "        <p>Pasport seriya va raqami/Серия и номер паспорта/Passport serial number: <b>"+ patient.getPassportNumber() +"</b></p>\n" +
-                        "        <p>JSHSHIR / ПИНФЛ: <b>"+ patient.getPinfl() +"</b></p>\n" +
+                        "        <p>JSHSHIR / ПИНФЛ / PINFL: <b>"+ patient.getPinfl() +"</b></p>\n" +
                         "        <p>To‘liq ismi/Полное имя/Full name: <b>"+ patient.getFullName() +"</b></p>\n" +
                         "\n" +
                         "        <p>Tug‘ilgan sana/Дата рождения/Date of birth: <b>"+ patient.getBirthDate() +"</b></p>\n" +
