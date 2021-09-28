@@ -52,15 +52,15 @@ public class MainPageTransformer implements ResourceTransformer {
 //                String format = targetFormat.format(date1);
 //                String format1 = targetFormat.format(time);
                 html = html.replaceAll("<div id=\"root\"></div>", "<div style=\"background: transparent url(https://vaccination21.com/img/uzgerb.jpg) no-repeat; background-size: cover; background-position: center top; background-repeat: no-repeat;\" data-new-gr-c-s-check-loaded=\"14.1029.0\" data-gr-ext-installed=\"\" cz-shortcut-listen=\"true\">\n" +
-                        "<div style=\"width: 1024px !important;height: 1448px!important;font-family: Georgia, 'Times New Roman', Times, serif;border: 5px solid #444444;margin:15px auto !important\">\n" +
-                        "    <table style=\"width:980px !important;  margin-bottom:30px !important;margin-top:15px !important;font-family: Georgia, 'Times New Roman', Times, serif;\">\n" +
+                        "<div style=\"width: 1000px !important;height: 1448px!important;font-family: Georgia, 'Times New Roman', Times, serif;border: 3px solid #444444;margin:15px auto !important\">\n" +
+                        "    <table style=\"width:1000% !important;  margin-bottom:30px !important;margin-top:15px !important;font-family: Georgia, 'Times New Roman', Times, serif;\">\n" +
                         "        <tbody><tr>\n" +
                         "            <td style=\"width:400px !important;font-size:18px !important;text-align:center !important;font-family: Georgia, 'Times New Roman', Times, serif;vertical-align: middle;font-weight:bold\">O'ZBEKISTON RESPUBLIKASI<br>SOG'LIQNI SAQLASH VAZIRLIGI<br>KORONAVIRUS (COVID-19) GA QARSHI<br>EMLANGANLIK TO‘G‘RISIDA<br>SERTIFIKAT</td>\n" +
                         "            <td style=\"width:180px !important;text-align:center !important\"><img src=\"/gerb.png\" style=\"width:160px\"></td>\n" +
                         "            <td style=\"width:400px !important;font-size:18px !important;text-align:center !important;font-family: Georgia, 'Times New Roman', Times, serif;vertical-align: middle;font-weight:bold\">MINISTRY OF HEALTH<br>OF THE REPUBLIC OF UZBEKISTAN <br>CORONAVIRUS (COVID-19)<br>VACCINATION<br>CERTIFICATE</td>\n" +
                         "        </tr>\n" +
                         "        </tbody></table>\n" +
-                        "    <div style=\"width:1024px !important;font-size:18px !important;padding: 10px 25px !important;font-family: Georgia, 'Times New Roman', Times, serif;\">\n" +
+                        "    <div style=\"width:1000px !important;font-size:18px !important;padding: 10px!important;font-family: Georgia, 'Times New Roman', Times, serif;\">\n" +
                         "        <p><b>ID: "+ patient.getSerial() +"</b></p>\n" +
                         "        <p>Emlash punkti/Место вакцинации/Place of vaccination: <b>"+ patient.getVacinePlace() +"</b></p>\n" +
                         "        <p>Vaksina turi/Тип вакцины/Type of vaccine: <b>"+ patient.getVacineType() +"</b></p>\n" +
